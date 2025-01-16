@@ -35,7 +35,7 @@ class UserAdapter(private val userList: MutableList<User>) :
         val currentUser = userList[position]
         holder.firstName.text = currentUser.firstName
         holder.lastName.text = currentUser.lastName
-        holder.age.text = currentUser.age
+        holder.age.text = currentUser.age.toString()
     }
 
     override fun getItemCount() = userList.size
